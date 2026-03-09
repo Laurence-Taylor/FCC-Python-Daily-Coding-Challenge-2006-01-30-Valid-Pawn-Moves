@@ -4,7 +4,7 @@ def find_pawn_moves(position):
     # if position is initial return the two possibles values
     if position in pawn_initial_pos:return [position[:1]+'3',position[:1]+'4']
     # else return the only one possible value
-    else:return position[:1]+str(int(position[1:])+1)
+    else:return [position[:1]+str(int(position[1:])+1)]
 
 if __name__ == '__main__':
     print(find_pawn_moves("D4"))
